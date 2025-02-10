@@ -8,11 +8,11 @@
   },
   "adIds": {
     "google": {
-      "fullScreen": "ca-app-pub-3940256099942544/4411468910",
-      "reward": "ca-app-pub-3940256099942544/1712485313",
-      "rewardInter": "ca-app-pub-3940256099942544/6978759866",
-      "banner": "ca-app-pub-3940256099942544/2435281174",
-      "native": "ca-app-pub-3940256099942544/3986624511"
+      "fullScreen": "ca-app-pub-3940256099942544/1033173712",
+      "reward": "ca-app-pub-3940256099942544/5224354917",
+      "rewardInter": "ca-app-pub-3940256099942544/5354046379",
+      "banner": "ca-app-pub-3940256099942544/9214589741",
+      "native": "ca-app-pub-3940256099942544/2247696110"
     },
     "unity": {
       "placementId": "",
@@ -133,6 +133,351 @@
         "native": 0
       },
       "/rd_calculator": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/loan_compare_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/gst_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/vat_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/mis_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/nsc_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/gross_profit_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/cost_of_sold_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/discount_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/business_forecast_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/age_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/length_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/weight_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/temperature_calculator_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/future_value_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/setting_screen": {
         "localAdFlag": true,
         "localClick": [
           0
