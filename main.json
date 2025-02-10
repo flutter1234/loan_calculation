@@ -1,0 +1,183 @@
+{
+  "one-signal": "3790d17a-5502-4333-8f77-16a156488386",
+  "assets": {
+    "wordJson": "https://miracocopepsi.com/admin/mayur/coc/viral/iosapp/jenis/logo_quiz/word.json",
+    "spinJson": "https://miracocopepsi.com/admin/mayur/coc/viral/iosapp/jenis/logo_quiz/spinMaster.json",
+    "privacyPolicy": "https://clashhero.in/privacy.php",
+    "contactUs": "https://clashhero.in/support/index.php",
+    "rateUs": "https://apps.apple.com/app/id6469602787",
+    "shareApp": "https://apps.apple.com/app/id6469602787"
+  },
+  "adIds": {
+    "google": {
+      "fullScreen": "ca-app-pub-3940256099942544/4411468910",
+      "reward": "ca-app-pub-3940256099942544/1712485313",
+      "rewardInter": "ca-app-pub-3940256099942544/6978759866",
+      "banner": "ca-app-pub-3940256099942544/2435281174",
+      "native": "ca-app-pub-3940256099942544/3986624511"
+    },
+    "unity": {
+      "placementId": "",
+      "gameId": ""
+    },
+    "applovin": {
+      "id": "",
+      "fullScreen": ""
+    },
+    "ironSource": {
+      "appId": ""
+    }
+  },
+  "1.0.0": {
+    "globalConfig": {
+      "globalAdFlag": false,
+      "globalNative": true,
+      "globalBanner": true,
+      "rewardOverRide": false,
+      "overrideTimer": 15,
+      "rateUsTimer": 600,
+      "maxFailed": 2
+    },
+    "rewardCollect":false,
+    "isUserConsent": false,
+    "isUpdate": false,
+    "updateUrl": "https://apps.apple.com/app/id6469602787",
+    "screens": {
+      "/home_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/logo_category_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/one_logo_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/levels_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      },
+      "/spin_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "2": 4,
+          "3": 4
+        },
+        "actions": {
+          "actionName": {
+            "localAdFlag": true,
+            "localClick": [
+              0
+            ],
+            "localFail": {
+              "0": 1
+            }
+          }
+        },
+        "banner": 0,
+        "native": 0
+      }
+    },
+    "actions": {
+      "/splash_screen": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "0": 1
+        }
+      },
+      "actionName": {
+        "localAdFlag": true,
+        "localClick": [
+          0
+        ],
+        "localFail": {
+          "0": 1
+        }
+      }
+    }
+  }
+}
