@@ -1,12 +1,8 @@
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-
-// 📦 Package imports:
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 
-// 🌎 Project imports:
 import '../../../MainJson/MainJson.dart';
 
 class GoogleBanner extends HookWidget {

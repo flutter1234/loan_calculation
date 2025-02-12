@@ -54,7 +54,7 @@ class _loan_calculationState extends State<loan_calculation> {
             return MaterialApp(
               home: AdSplashScreen(
                   onComplete: (context, mainJson) async {
-                    "SplashScreen".performAction(
+                    "/splash_screen".performAction(
                       context: context,
                       onComplete: () {
                         Navigator.pushReplacementNamed(context, home_screen.routeName);
@@ -62,12 +62,12 @@ class _loan_calculationState extends State<loan_calculation> {
                     );
                   },
                   servers: const [
-                    "miracocopepsi.com",
+                    "github.io",
                     // "coinspinmaster.com",
                     // "trailerspot4k.com",
                   ],
                   jsonUrl: const [
-                    "https://miracocopepsi.com/admin/mayur/coc/office/github/ads_demo.json",
+                    "https://flutter1234.github.io/loan_calculation/main.json",
                     "https://coinspinmaster.com/raj/ios/anime/json/main.json",
                     "https://trailerspot4k.com/raj/ios/anime/json/main.json"
                   ],

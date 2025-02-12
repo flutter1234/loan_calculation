@@ -1,22 +1,17 @@
-// 🎯 Dart imports:
 import 'dart:async';
 
-// 🐦 Flutter imports:
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-
-// 📦 Package imports:
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:dart_ping/dart_ping.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:logger/logger.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-// 🌎 Project imports:
 import '../MainJson/MainJson.dart';
 import '../Methods/BaseClass.dart';
 import '../Utils/Alerts/AlertEngine.dart';
@@ -30,13 +25,7 @@ class AdSplashScreen extends HookWidget {
   final String version;
   final Function(BuildContext context, Map mainJson) onComplete;
 
-  const AdSplashScreen(
-      {required this.child,
-      required this.onComplete,
-      required this.version,
-      required this.servers,
-      required this.jsonUrl,
-      super.key});
+  const AdSplashScreen({required this.child, required this.onComplete, required this.version, required this.servers, required this.jsonUrl, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -53,8 +42,7 @@ class AdSplashScreen extends HookWidget {
         barrierDismissible: false,
         builder: (context) => CupertinoAlertDialog(
           title: const Text("New Update Available"),
-          content: const Text(
-              "New Update for your app is now available please update app to continue"),
+          content: const Text("New Update for your app is now available please update app to continue"),
           actions: <Widget>[
             CupertinoDialogAction(
               child: const Text("Update Now"),
@@ -74,8 +62,7 @@ class AdSplashScreen extends HookWidget {
           barrierDismissible: true,
           builder: (context) => CupertinoAlertDialog(
                 title: Text(packageInfo.appName),
-                content: const Text(
-                    "If you like our app. Would you mind to take moment to Rate Us."),
+                content: const Text("If you like our app. Would you mind to take moment to Rate Us."),
                 actions: <Widget>[
                   CupertinoDialogAction(
                     child: const Text("Not now"),
@@ -97,12 +84,12 @@ class AdSplashScreen extends HookWidget {
     mainFetchingLogic() {
       Future.microtask(() async {
         try {
-          Response response = await Dio()
-              .get(jsonWithTime.value[currentFetchIndex.value]['mainJson'],
-                  options: Options(
-                    receiveDataWhenStatusError: true,
-                    receiveTimeout: const Duration(minutes: 1),
-                  ));
+          Logger().d("Fetched Json ${jsonWithTime.value[currentFetchIndex.value]['mainJson']}");
+          Response response = await Dio().get(jsonWithTime.value[currentFetchIndex.value]['mainJson'],
+              options: Options(
+                receiveDataWhenStatusError: true,
+                receiveTimeout: const Duration(minutes: 1),
+              ));
 
           if (response.data != null) {
             Future.microtask(() async {
@@ -117,10 +104,8 @@ class AdSplashScreen extends HookWidget {
                     return;
                   }
 
-                  rateUsTimer = Timer.periodic(
-                      Duration(
-                          seconds: response.data[version]['globalConfig']
-                              ['rateUsTimer']), (timer) {
+                  rateUsTimer = Timer.periodic(Duration(seconds: response.data[version]['globalConfig']['rateUsTimer']), (timer) {
+                    Logger().d("Rate Us Dialog");
                     rateUsDialog();
                   });
 
@@ -138,8 +123,7 @@ class AdSplashScreen extends HookWidget {
                   if (response.data[version]['isUserConsent']) {
                     await BaseClass().showUserMessage();
                   } else {
-                    await AppTrackingTransparency
-                        .requestTrackingAuthorization();
+                    await AppTrackingTransparency.requestTrackingAuthorization();
                   }
 
                   onComplete(context, response.data);
@@ -167,8 +151,7 @@ class AdSplashScreen extends HookWidget {
       });
     }
 
-    getFastServer(List<String> servers,
-        Function(List<int> timeList) onPingTestCompleted) {
+    getFastServer(List<String> servers, Function(List<int> timeList) onPingTestCompleted) {
       pingTimes = List.generate(servers.length, (index) => index);
       for (int i = 0; i < servers.length; i++) {
         pingsList.insert(i, Ping(servers[i]));
@@ -176,7 +159,6 @@ class AdSplashScreen extends HookWidget {
           pingTimes[i] = event.response?.time?.inMilliseconds ?? 0;
         });
       }
-      print("ping list $pingsList");
       Future.delayed(const Duration(seconds: 2), () {
         onPingTestCompleted(pingTimes);
         // Stop Pings
@@ -194,13 +176,10 @@ class AdSplashScreen extends HookWidget {
                 ),
           )
           .toList();
-
-      print(temp);
       return temp.isEmpty ? null : temp[0];
     }
 
-    List<Map> sortListByFastest(
-        List<String> servers, List<int> pingsTimeStamp, List jsonUrl) {
+    List<Map> sortListByFastest(List<String> servers, List<int> pingsTimeStamp, List jsonUrl) {
       List<Map> temp = [];
       for (int i = 0; i < servers.length; i++) {
         temp.add(
@@ -212,8 +191,7 @@ class AdSplashScreen extends HookWidget {
         );
       }
       temp.sort(
-        (a, b) => (int.tryParse(a['time'].toString()) ?? 0)
-            .compareTo((int.tryParse(b['time'].toString()) ?? 0)),
+        (a, b) => (int.tryParse(a['time'].toString()) ?? 0).compareTo((int.tryParse(b['time'].toString()) ?? 0)),
       );
       temp.removeWhere(
         (element) => element['mainJson'] == null,
@@ -221,6 +199,7 @@ class AdSplashScreen extends HookWidget {
       temp.removeWhere(
         (element) => element['time'] == 0,
       );
+      Logger().d("Server List $temp");
       return temp;
     }
 

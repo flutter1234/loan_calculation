@@ -1,12 +1,8 @@
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-
-// 📦 Package imports:
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:provider/provider.dart';
 
-// 🌎 Project imports:
 import 'AdLoaderProvider.dart';
 
 class AdLoader extends HookWidget {
@@ -31,7 +27,7 @@ class AdLoader extends HookWidget {
                 ? Container(
                     height: double.infinity,
                     width: double.infinity,
-                    color: Colors.black.withOpacity(0.5),
+                    color: Colors.black.withValues(alpha: 0.5),
                     child: Center(
                       child: LoadingAnimationWidget.hexagonDots(
                         color: Colors.white,

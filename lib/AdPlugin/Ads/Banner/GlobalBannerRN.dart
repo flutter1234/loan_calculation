@@ -1,11 +1,7 @@
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-
-// 📦 Package imports:
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:provider/provider.dart';
 
-// 🌎 Project imports:
 import '../../AdsWidget/Google/Banner/GoogleBanner.dart';
 import '../../MainJson/MainJson.dart';
 

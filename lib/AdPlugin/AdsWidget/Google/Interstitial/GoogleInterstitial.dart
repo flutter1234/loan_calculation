@@ -1,11 +1,7 @@
-// 🐦 Flutter imports:
 import 'package:flutter/cupertino.dart';
-
-// 📦 Package imports:
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 
-// 🌎 Project imports:
 import '../../../MainJson/MainJson.dart';
 
 class GoogleInterstitial {

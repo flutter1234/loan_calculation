@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:loan_calculation/Screens/Home_screen/home_screen.dart';
 
 class splash_screen extends StatefulWidget {
   static const routeName = '/splash_screen';
@@ -15,14 +14,6 @@ class splash_screen extends StatefulWidget {
 }
 
 class _splash_screenState extends State<splash_screen> {
-  @override
-  void initState() {
-    Future.delayed(Duration(seconds: 3)).then((value) {
-      Navigator.pushReplacementNamed(context, home_screen.routeName);
-    });
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

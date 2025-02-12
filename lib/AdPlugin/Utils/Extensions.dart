@@ -1,7 +1,5 @@
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
-// 🌎 Project imports:
 import '../Ads/FullScreen/Ads.dart';
 
 extension NavigationExtension on String {

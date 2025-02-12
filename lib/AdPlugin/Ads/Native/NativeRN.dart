@@ -1,11 +1,7 @@
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-
-// 📦 Package imports:
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:provider/provider.dart';
 
-// 🌎 Project imports:
 import '../../AdsWidget/Google/Native/GoogleNative.dart';
 import '../../MainJson/MainJson.dart';
 
@@ -23,7 +19,8 @@ class NativeRN extends HookWidget {
 
     showAd() {
       MainJson mainJson = context.read<MainJson>();
-      if ((mainJson.data![mainJson.version]['globalConfig']['globalAdFlag'] ?? false) ==
+      if ((mainJson.data![mainJson.version]['globalConfig']['globalAdFlag'] ??
+              false) ==
           false) {
         nativeWidget.value = const SizedBox(
           height: 0,
@@ -31,7 +28,8 @@ class NativeRN extends HookWidget {
         );
         return;
       }
-      if ((mainJson.data![mainJson.version]['globalConfig']['globalNative'] ?? false) ==
+      if ((mainJson.data![mainJson.version]['globalConfig']['globalNative'] ??
+              false) ==
           false) {
         nativeWidget.value = const SizedBox(
           height: 0,
